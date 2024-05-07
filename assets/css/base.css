@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #6c7ee1;
+    --color-green: #86e3ce;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    background-color: #f5f5f5;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #8e8bff 0%, #2be6ff 52%, #2bff88 90%);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}

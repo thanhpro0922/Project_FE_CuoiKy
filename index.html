@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- CDN Font Awesome -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/@splidejs/splide@3.0.9/dist/css/splide.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>Diner</title>
+    </head>
+    <body>
+        <header class="header header-fixed">
+            <div class="container-sm">
+                <div class="row">
+                    <div
+                        class="header-logo col-xl-2 col-lg-5 col-md-3 col-sm-10 col-9"
+                    >
+                        <a href="#">
+                            <img
+                                src="./assets/images/Dragon_Ball_Z_Logo.png"
+                                alt="DragonBall"
+                                class="header__logo"
+                            />
+                        </a>
+                    </div>
+                    <nav class="nav col-xl-6 col-lg-7 col-md-9">
+                        <ul class="header-menu-list">
+                            <li class="header-menu-item">
+                                <a href="#">Trang chủ</a>
+                            </li>
+                            <li class="header-menu-item">
+                                <a href="#!"
+                                    >Thể loại truyện
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="header-submenu-list">
+                                    <li>
+                                        <p class="header-submenu__text">
+                                            <a href="#!">Hành động</a>
+                                        </p>
+                                        <p class="header-submenu__text">
+                                            <a href="#!">Tình cảm</a>
+                                        </p>
+                                        <p class="header-submenu__text">
+                                            <a href="#!">Học đường</a>
+                                        </p>
+                                        <p class="header-submenu__text">
+                                            <a href="#!">Hài hước</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="header-submenu__text">
+                                            <a href="#!">Trinh thám</a>
+                                        </p>
+                                        <p class="header-submenu__text">
+                                            <a href="#!">Kinh dị</a>
+                                        </p>
+                                        <p class="header-submenu__text">
+                                            <a href="#!">Cổ trang</a>
+                                        </p>
+                                        <p class="header-submenu__text">
+                                            <a href="#!">Hoạt hình</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header-menu-item">
+                                <a href="#!"
+                                    >Thể loại anime
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="header-submenu-list">
+                                    <li>
+                                        <p class="header-submenu__text">
+                                            <a href="#!">Hành động</a>
+                                        </p>
+                                        <p class="header-submenu__text">
+                                            <a href="#!">Tình cảm</a>
+                                        </p>
+                                        <p class="header-submenu__text">
+                                            <a href="#!">Học đường</a>
+                                        </p>
+                                        <p class="header-submenu__text">
+                                            <a href="#!">Hài hước</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="header-submenu__text">
+                                            <a href="#!">Trinh thám</a>
+                                        </p>
+                                        <p class="header-submenu__text">
+                                            <a href="#!">Kinh dị</a>
+                                        </p>
+                                        <p class="header-submenu__text">
+                                            <a href="#!">Cổ trang</a>
+                                        </p>
+                                        <p class="header-submenu__text">
+                                            <a href="#!">Hoạt hình</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header-menu-item">
+                                <a href="#!">Lịch sử</a>
+                            </li>
+                            <li class="header-menu-item">
+                                <a href="#!">Hướng dẫn</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <form action="" class="search col-xl-4">
+                        <input type="text" placeholder="Tìm kiếm:" />
+                        <button class="header__search__btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <a href="#!" class="sign-in">Đăng nhập</a>
+                    </form>
+                    <div class="header-menu-mobile col-sm-2 col-3">
+                        <button class="header-menu-mobile__btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="banner">
+            <div class="container banner-container">`
+                <video class="myVideo" preload="auto" loop muted autoplay>
+                    <source
+                        src="./assets/videos/bannerstm.mp4"
+                        type="video/mp4"
+                    />`
+                </video>
+                <div class="banner__info">
+                    <h1 class="banner__heading">One Punch Man</h1>
+                    <a href="#!" class="banner-watch">Xem ngay</a>
+                </div>
+            </div>
+        </div>
+        <main style="height: 5000px">
+            <article class="posts">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="posts__heading mb-5">Anime mới nhất</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="splide">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <a href="#!">
+                                                <div class="post-inner__img">
+                                                    <img
+                                                        src="./assets/images/post1.webp"
+                                                        alt="OnePiece"
+                                                    />
+                                                </div>
+                                                <div class="post-info">
+                                                    <h3
+                                                        class="post-info__heading line-clamp"
+                                                    >
+                                                        One Piece - Đảo hải tặc
+                                                    </h3>
+
+                                                    <d
+                                                        class="post-inner__date d-flex"
+                                                    >
+                                                        <p class="post__dateL">
+                                                            Ngày phát hành:
+                                                        </p>
+                                                        <p class="post__dateR">
+                                                            05/07/2024
+                                                        </p>
+                                                    </d>
+                                                    <a
+                                                        href=""
+                                                        class="post-info__view"
+                                                        >Xem ngay</a
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <a href="#!">
+                                                <div class="post-inner__img">
+                                                    <img
+                                                        src="./assets/images/post2.webp"
+                                                        alt="DragonBall"
+                                                    />
+                                                </div>
+                                                <div class="post-info">
+                                                    <h3
+                                                        class="post-info__heading line-clamp"
+                                                    >
+                                                        7 Viên Ngọc Rồng
+                                                    </h3>
+                                                    <d
+                                                        class="post-inner__date d-flex"
+                                                    >
+                                                        <p class="post__dateL">
+                                                            Ngày phát hành:
+                                                        </p>
+                                                        <p class="post__dateR">
+                                                            05/07/2024
+                                                        </p>
+                                                    </d>
+                                                    <a
+                                                        href=""
+                                                        class="post-info__view"
+                                                        >Xem ngay</a
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <a href="#!">
+                                                <div class="post-inner__img">
+                                                    <img
+                                                        src="./assets/images/post3.jpg"
+                                                        alt="Doraemon"
+                                                    />
+                                                </div>
+                                                <div class="post-info">
+                                                    <h3
+                                                        class="post-info__heading line-clamp"
+                                                    >
+                                                        Doraemon
+                                                    </h3>
+                                                    <d
+                                                        class="post-inner__date d-flex"
+                                                    >
+                                                        <p class="post__dateL">
+                                                            Ngày phát hành:
+                                                        </p>
+                                                        <p class="post__dateR">
+                                                            05/07/2024
+                                                        </p>
+                                                    </d>
+                                                    <a
+                                                        href=""
+                                                        class="post-info__view"
+                                                        >Xem ngay</a
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <a href="#!">
+                                                <div class="post-inner__img">
+                                                    <img
+                                                        src="./assets/images/post4.jpg"
+                                                        alt="Shin"
+                                                    />
+                                                </div>
+                                                <div class="post-info">
+                                                    <h3
+                                                        class="post-info__heading line-clamp"
+                                                    >
+                                                        Shin Cậu Bé Bút Chì
+                                                    </h3>
+                                                    <d
+                                                        class="post-inner__date d-flex"
+                                                    >
+                                                        <p class="post__dateL">
+                                                            Ngày phát hành:
+                                                        </p>
+                                                        <p class="post__dateR">
+                                                            05/07/2024
+                                                        </p>
+                                                    </d>
+                                                    <a
+                                                        href=""
+                                                        class="post-info__view"
+                                                        >Xem ngay</a
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <a href="#!">
+                                                <div class="post-inner__img">
+                                                    <img
+                                                        src="./assets/images/post5.jpeg"
+                                                        alt="Conan"
+                                                    />
+                                                </div>
+                                                <div class="post-info">
+                                                    <h3
+                                                        class="post-info__heading line-clamp"
+                                                    >
+                                                        Thám Tử Lừng Danh Conan
+                                                    </h3>
+                                                    <d
+                                                        class="post-inner__date d-flex"
+                                                    >
+                                                        <p class="post__dateL">
+                                                            Ngày phát hành:
+                                                        </p>
+                                                        <p class="post__dateR">
+                                                            05/07/2024
+                                                        </p>
+                                                    </d>
+                                                    <a
+                                                        href=""
+                                                        class="post-info__view"
+                                                        >Xem ngay</a
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <a href="#!">
+                                                <div class="post-inner__img">
+                                                    <img
+                                                        src="./assets/images/post6.jpg"
+                                                        alt="JujutsuKaisen"
+                                                    />
+                                                </div>
+                                                <div class="post-info">
+                                                    <h3
+                                                        class="post-info__heading line-clamp"
+                                                    >
+                                                        Chú Thuật Hồi Chiến
+                                                    </h3>
+                                                    <d
+                                                        class="post-inner__date d-flex"
+                                                    >
+                                                        <p class="post__dateL">
+                                                            Ngày phát hành:
+                                                        </p>
+                                                        <p class="post__dateR">
+                                                            05/07/2024
+                                                        </p>
+                                                    </d>
+                                                    <a
+                                                        href=""
+                                                        class="post-info__view"
+                                                        >Xem ngay</a
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <a href="#!">
+                                                <div class="post-inner__img">
+                                                    <img
+                                                        src="./assets/images/post7.webp"
+                                                        alt="ThatNghiepChuyenSinh"
+                                                    />
+                                                </div>
+                                                <div class="post-info">
+                                                    <h3
+                                                        class="post-info__heading line-clamp"
+                                                    >
+                                                        Thất Nghiệp Chuyển Sinh
+                                                    </h3>
+                                                    <d
+                                                        class="post-inner__date d-flex"
+                                                    >
+                                                        <p class="post__dateL">
+                                                            Ngày phát hành:
+                                                        </p>
+                                                        <p class="post__dateR">
+                                                            05/07/2024
+                                                        </p>
+                                                    </d>
+                                                    <a
+                                                        href=""
+                                                        class="post-info__view"
+                                                        >Xem ngay</a
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <a href="#!">
+                                                <div class="post-inner__img">
+                                                    <img
+                                                        src="./assets/images/post8.jpeg"
+                                                        alt="Naruto"
+                                                    />
+                                                </div>
+                                                <div class="post-info">
+                                                    <h3
+                                                        class="post-info__heading line-clamp"
+                                                    >
+                                                        Naruto Shippuden
+                                                    </h3>
+                                                    <d
+                                                        class="post-inner__date d-flex"
+                                                    >
+                                                        <p class="post__dateL">
+                                                            Ngày phát hành:
+                                                        </p>
+                                                        <p class="post__dateR">
+                                                            05/07/2024
+                                                        </p>
+                                                    </d>
+                                                    <a
+                                                        href=""
+                                                        class="post-info__view"
+                                                        >Xem ngay</a
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <a href="#!">
+                                                <div class="post-inner__img">
+                                                    <img
+                                                        src="./assets/images/post9.png"
+                                                        alt="Pokemon"
+                                                    />
+                                                </div>
+                                                <div class="post-info">
+                                                    <h3
+                                                        class="post-info__heading line-clamp"
+                                                    >
+                                                        Pokemon XYZ
+                                                    </h3>
+                                                    <d
+                                                        class="post-inner__date d-flex"
+                                                    >
+                                                        <p class="post__dateL">
+                                                            Ngày phát hành:
+                                                        </p>
+                                                        <p class="post__dateR">
+                                                            05/07/2024
+                                                        </p>
+                                                    </d>
+                                                    <a
+                                                        href=""
+                                                        class="post-info__view"
+                                                        >Xem ngay</a
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="posts2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="posts__heading mb-5">Manga mới nhất</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="splide2">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <a href="#!">
+                                                <div class="post-inner__img">
+                                                    <img
+                                                        src="./assets/images/post1.webp"
+                                                        alt="OnePiece"
+                                                    />
+                                                </div>
+                                                <div class="post-info">
+                                                    <h3
+                                                        class="post-info__heading line-clamp"
+                                                    >
+                                                        One Piece - Đảo hải tặc
+                                                    </h3>
+
+                                                    <d
+                                                        class="post-inner__date d-flex"
+                                                    >
+                                                        <p class="post__dateL">
+                                                            Ngày phát hành:
+                                                        </p>
+                                                        <p class="post__dateR">
+                                                            05/07/2024
+                                                        </p>
+                                                    </d>
+                                                    <a
+                                                        href=""
+                                                        class="post-info__view"
+                                                        >Xem ngay</a
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <a href="#!">
+                                                <div class="post-inner__img">
+                                                    <img
+                                                        src="./assets/images/post2.webp"
+                                                        alt="DragonBall"
+                                                    />
+                                                </div>
+                                                <div class="post-info">
+                                                    <h3
+                                                        class="post-info__heading line-clamp"
+                                                    >
+                                                        7 Viên Ngọc Rồng
+                                                    </h3>
+                                                    <d
+                                                        class="post-inner__date d-flex"
+                                                    >
+                                                        <p class="post__dateL">
+                                                            Ngày phát hành:
+                                                        </p>
+                                                        <p class="post__dateR">
+                                                            05/07/2024
+                                                        </p>
+                                                    </d>
+                                                    <a
+                                                        href=""
+                                                        class="post-info__view"
+                                                        >Xem ngay</a
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <a href="#!">
+                                                <div class="post-inner__img">
+                                                    <img
+                                                        src="./assets/images/post3.jpg"
+                                                        alt="Doraemon"
+                                                    />
+                                                </div>
+                                                <div class="post-info">
+                                                    <h3
+                                                        class="post-info__heading line-clamp"
+                                                    >
+                                                        Doraemon
+                                                    </h3>
+                                                    <d
+                                                        class="post-inner__date d-flex"
+                                                    >
+                                                        <p class="post__dateL">
+                                                            Ngày phát hành:
+                                                        </p>
+                                                        <p class="post__dateR">
+                                                            05/07/2024
+                                                        </p>
+                                                    </d>
+                                                    <a
+                                                        href=""
+                                                        class="post-info__view"
+                                                        >Xem ngay</a
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <a href="#!">
+                                                <div class="post-inner__img">
+                                                    <img
+                                                        src="./assets/images/post4.jpg"
+                                                        alt="Shin"
+                                                    />
+                                                </div>
+                                                <div class="post-info">
+                                                    <h3
+                                                        class="post-info__heading line-clamp"
+                                                    >
+                                                        Shin Cậu Bé Bút Chì
+                                                    </h3>
+                                                    <d
+                                                        class="post-inner__date d-flex"
+                                                    >
+                                                        <p class="post__dateL">
+                                                            Ngày phát hành:
+                                                        </p>
+                                                        <p class="post__dateR">
+                                                            05/07/2024
+                                                        </p>
+                                                    </d>
+                                                    <a
+                                                        href=""
+                                                        class="post-info__view"
+                                                        >Xem ngay</a
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <a href="#!">
+                                                <div class="post-inner__img">
+                                                    <img
+                                                        src="./assets/images/post5.jpeg"
+                                                        alt="Conan"
+                                                    />
+                                                </div>
+                                                <div class="post-info">
+                                                    <h3
+                                                        class="post-info__heading line-clamp"
+                                                    >
+                                                        Thám Tử Lừng Danh Conan
+                                                    </h3>
+                                                    <d
+                                                        class="post-inner__date d-flex"
+                                                    >
+                                                        <p class="post__dateL">
+                                                            Ngày phát hành:
+                                                        </p>
+                                                        <p class="post__dateR">
+                                                            05/07/2024
+                                                        </p>
+                                                    </d>
+                                                    <a
+                                                        href=""
+                                                        class="post-info__view"
+                                                        >Xem ngay</a
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <a href="#!">
+                                                <div class="post-inner__img">
+                                                    <img
+                                                        src="./assets/images/post6.jpg"
+                                                        alt="JujutsuKaisen"
+                                                    />
+                                                </div>
+                                                <div class="post-info">
+                                                    <h3
+                                                        class="post-info__heading line-clamp"
+                                                    >
+                                                        Chú Thuật Hồi Chiến
+                                                    </h3>
+                                                    <d
+                                                        class="post-inner__date d-flex"
+                                                    >
+                                                        <p class="post__dateL">
+                                                            Ngày phát hành:
+                                                        </p>
+                                                        <p class="post__dateR">
+                                                            05/07/2024
+                                                        </p>
+                                                    </d>
+                                                    <a
+                                                        href=""
+                                                        class="post-info__view"
+                                                        >Xem ngay</a
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <a href="#!">
+                                                <div class="post-inner__img">
+                                                    <img
+                                                        src="./assets/images/post7.webp"
+                                                        alt="ThatNghiepChuyenSinh"
+                                                    />
+                                                </div>
+                                                <div class="post-info">
+                                                    <h3
+                                                        class="post-info__heading line-clamp"
+                                                    >
+                                                        Thất Nghiệp Chuyển Sinh
+                                                    </h3>
+                                                    <d
+                                                        class="post-inner__date d-flex"
+                                                    >
+                                                        <p class="post__dateL">
+                                                            Ngày phát hành:
+                                                        </p>
+                                                        <p class="post__dateR">
+                                                            05/07/2024
+                                                        </p>
+                                                    </d>
+                                                    <a
+                                                        href=""
+                                                        class="post-info__view"
+                                                        >Xem ngay</a
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <a href="#!">
+                                                <div class="post-inner__img">
+                                                    <img
+                                                        src="./assets/images/post8.jpeg"
+                                                        alt="Naruto"
+                                                    />
+                                                </div>
+                                                <div class="post-info">
+                                                    <h3
+                                                        class="post-info__heading line-clamp"
+                                                    >
+                                                        Naruto Shippuden
+                                                    </h3>
+                                                    <d
+                                                        class="post-inner__date d-flex"
+                                                    >
+                                                        <p class="post__dateL">
+                                                            Ngày phát hành:
+                                                        </p>
+                                                        <p class="post__dateR">
+                                                            05/07/2024
+                                                        </p>
+                                                    </d>
+                                                    <a
+                                                        href=""
+                                                        class="post-info__view"
+                                                        >Xem ngay</a
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <a href="#!">
+                                                <div class="post-inner__img">
+                                                    <img
+                                                        src="./assets/images/post9.png"
+                                                        alt="Pokemon"
+                                                    />
+                                                </div>
+                                                <div class="post-info">
+                                                    <h3
+                                                        class="post-info__heading line-clamp"
+                                                    >
+                                                        Pokemon XYZ
+                                                    </h3>
+                                                    <d
+                                                        class="post-inner__date d-flex"
+                                                    >
+                                                        <p class="post__dateL">
+                                                            Ngày phát hành:
+                                                        </p>
+                                                        <p class="post__dateR">
+                                                            05/07/2024
+                                                        </p>
+                                                    </d>
+                                                    <a
+                                                        href=""
+                                                        class="post-info__view"
+                                                        >Xem ngay</a
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <script
+            src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://unpkg.com/@splidejs/splide@3.0.9/dist/js/splide.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

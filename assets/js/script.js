@@ -42,4 +42,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     configureSplide(".splide");
     configureSplide(".splide2");
+
+    var scroll = document.getElementById("scrollToTopBtn");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 1) {
+            scroll.classList.remove("hidden");
+        } else {
+            scroll.classList.add("hidden");
+        }
+    });
+
+    scroll.addEventListener("click", () => {
+        window.scrollTo({ top: 0 });
+    });
 });

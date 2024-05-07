@@ -252,6 +252,40 @@
     margin-top: 100px;
 }
 
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 100;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+    transition: all 0.25s;
+}
+
+#scrollToTopBtn i {
+    font-size: 3rem;
+    color: #fff;
+    padding: 20px 25px;
+    border-radius: 50%;
+    background-color: #a9c9ff;
+    background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+}
+
+#scrollToTopBtn i:hover {
+    background-color: #8e8bff;
+    background-image: linear-gradient(
+        45deg,
+        #8e8bff 0%,
+        #2be6ff 52%,
+        #2bff88 90%
+    );
+}
+
+.hidden {
+    display: none;
+}
+
 @media (max-width: 1199.98px) {
     .sign-in,
     .search {

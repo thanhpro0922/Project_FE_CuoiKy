@@ -231,29 +231,32 @@
         <!-- Banner -->
         <div class="banner">
             <div class="container banner-container">
-                `
-                <video class="myVideo" preload="auto" loop muted>
-                    <source
-                        src="./assets/videos/bannerstm.mp4"
-                        type="video/mp4"
-                    />
-                    `
-                </video>
-                <div class="banner__info">
-                    <h1
-                        class="banner__heading"
-                        data-aos="fade-up"
-                        data-aos-duration="1500"
-                    >
-                        One Punch Man
-                    </h1>
-                    <a
-                        href="#!"
-                        class="banner-watch"
-                        data-aos="fade-up"
-                        data-aos-duration="3000"
-                        >Xem ngay</a
-                    >
+                <div class="row">
+                    <div class="col-12 col-lg-12 col-md-12 col-sm-12">
+                        <video class="myVideo" preload="auto" loop muted>
+                            <source
+                                src="./assets/videos/bannerstm.mp4"
+                                type="video/mp4"
+                            />
+                            `
+                        </video>
+                        <div class="banner__info">
+                            <h1
+                                class="banner__heading"
+                                data-aos="fade-up"
+                                data-aos-duration="1500"
+                            >
+                                One Punch Man
+                            </h1>
+                            <a
+                                href="#!"
+                                class="banner-watch"
+                                data-aos="fade-up"
+                                data-aos-duration="3000"
+                                >Xem ngay</a
+                            >
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -899,6 +902,15 @@
                 <i class="fa-solid fa-angles-up"></i>
             </button>
 
+            <!-- Setting -->
+            <!-- <button class="setting">
+                <i class="fa-solid fa-gear"></i>
+            </button> -->
+            <div class="switch">
+                <input hidden type="checkbox" id="switch" />
+                <label for="switch"> </label>
+            </div>
+
             <!-- Decor -->
             <section class="decor" id="decor">
                 <div class="container">
@@ -1085,42 +1097,30 @@
             <section class="quality">
                 <div class="container">
                     <div class="row">
-                        <div
-                            class="col-12"
-                            data-aos="flip-up"
-                            data-aos-once="true"
+                        <h2
+                            class="col-12 quality__heading text-center"
+                            data-aos="fade-right"
                         >
-                            <h2 class="quality__heading text-center">
-                                Cam Kết Chất Lượng Dịch Vụ
-                            </h2>
-                        </div>
+                            Cam Kết Chất Lượng Dịch Vụ
+                        </h2>
                     </div>
                     <div class="row quality-bottom">
-                        <div
-                            class="col-xl-4 col-sm-12 col-md-4"
-                            data-aos="zoom-out-up"
-                        >
-                            <div class="quality__item">
+                        <div class="col-xl-4 col-sm-12 col-md-4">
+                            <div class="quality__item" data-aos="zoom-in-down">
                                 <i class="fa-solid fa-bolt"></i>
                                 <p class="quality__text">Tốc độ nhanh</p>
                             </div>
                         </div>
-                        <div
-                            class="col-xl-4 col-sm-12 col-md-4"
-                            data-aos="zoom-out-up"
-                        >
-                            <div class="quality__item">
+                        <div class="col-xl-4 col-sm-12 col-md-4">
+                            <div class="quality__item" data-aos="zoom-in-down">
                                 <i class="fa-solid fa-images"></i>
                                 <p class="quality__text">
                                     Chất lượng hình ảnh tốt nhất
                                 </p>
                             </div>
                         </div>
-                        <div
-                            class="col-xl-4 col-sm-12 col-md-4"
-                            data-aos="zoom-out-up"
-                        >
-                            <div class="quality__item">
+                        <div class="col-xl-4 col-sm-12 col-md-4">
+                            <div class="quality__item" data-aos="zoom-in-down">
                                 <i class="fa-solid fa-lock"></i>
                                 <p class="quality__text">Bảo mật</p>
                             </div>
@@ -1128,6 +1128,7 @@
                     </div>
                 </div>
             </section>
+
             <!-- Tutorial -->
             <section class="tutorial" id="tutorial">
                 <div class="container">

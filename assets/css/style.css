@@ -186,6 +186,60 @@
 .banner-container {
     position: relative;
 }
+/* 
+.setting {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 2.8rem;
+}
+
+.setting i {
+    color: #5e5e5e;
+} */
+
+.switch {
+    bottom: 100px;
+    right: 10px;
+    position: fixed;
+    z-index: 1111;
+}
+
+.switch label {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    outline: 3px solid #e8e8e8;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    transition: ease 0.25s;
+}
+
+.switch label::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    transition: ease 0.25s;
+}
+
+.switch input[type="checkbox"]:checked + label::before {
+    transform: translateX(30px);
+    box-shadow: 0 -2px -5px rgba(0, 0, 0, 0.5);
+    transition: ease 0.25s;
+}
+
+.switch input[type="checkbox"]:checked + label {
+    background-color: #74e563;
+    outline-color: #74e563;
+}
 
 @supports (background-clip: text) or (-webkit-background-clip: text) or
     (-ms-background-clip: text) {
@@ -291,6 +345,7 @@
 }
 
 .decor {
+    width: 100%;
     margin-top: 100px;
     scroll-margin-top: 100px;
 }
@@ -750,6 +805,9 @@
 }
 
 @media (max-width: 991.98px) {
+    .header {
+        width: 100%;
+    }
     .myVideo {
         width: 680px;
     }
@@ -784,6 +842,7 @@
 }
 
 @media (max-width: 767.98px) {
+    
     .header-menu-mobile {
         display: block;
     }
@@ -811,6 +870,10 @@
     }
     .posts {
         margin-top: 350px;
+    }
+
+    .quality {
+        width: 100%;
     }
 
     .quality__item {

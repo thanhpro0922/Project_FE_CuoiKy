@@ -233,7 +233,13 @@
             <div class="container banner-container">
                 <div class="row">
                     <div class="col-12 col-lg-12 col-md-12 col-sm-12">
-                        <video class="myVideo" preload="auto" loop muted>
+                        <video
+                            class="myVideo"
+                            preload="auto"
+                            loop
+                            muted
+                            autoplay
+                        >
                             <source
                                 src="./assets/videos/bannerstm.mp4"
                                 type="video/mp4"
@@ -902,13 +908,10 @@
                 <i class="fa-solid fa-angles-up"></i>
             </button>
 
-            <!-- Setting -->
-            <!-- <button class="setting">
-                <i class="fa-solid fa-gear"></i>
-            </button> -->
+            <!-- Dark Mode -->
             <div class="switch">
                 <input hidden type="checkbox" id="switch" />
-                <label for="switch"> </label>
+                <label for="switch" class="btnDarkMode"> </label>
             </div>
 
             <!-- Decor -->
@@ -1105,7 +1108,7 @@
                         </h2>
                     </div>
                     <div class="row quality-bottom">
-                        <div class="col-xl-4 col-sm-12 col-md-4">
+                        <div class="col-xl-4 col-sm-12 col-md-4 test">
                             <div class="quality__item" data-aos="zoom-in-down">
                                 <i class="fa-solid fa-bolt"></i>
                                 <p class="quality__text">Tốc độ nhanh</p>

@@ -32,7 +32,7 @@
     padding: 20px 10px;
     font-size: 1.5rem;
     font-weight: 500;
-    color: #fff;
+    color: var(--white);
     text-wrap: nowrap;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .header-menu-item i {
-    transition: ease 0.25s;
+    transition: var(--ease025s);
 }
 
 .header-menu-item:hover i {
@@ -95,7 +95,7 @@
 }
 
 .header-submenu__text a {
-    transition: ease 0.25s;
+    transition: var(--ease025s);
 }
 
 .header-submenu__text a:hover {
@@ -186,20 +186,6 @@
 .banner-container {
     position: relative;
 }
-/* 
-.setting {
-    position: fixed;
-    bottom: 100px;
-    right: 25px;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    font-size: 2.8rem;
-}
-
-.setting i {
-    color: #5e5e5e;
-} */
 
 .switch {
     bottom: 100px;
@@ -215,7 +201,8 @@
     outline: 3px solid #e8e8e8;
     border-radius: 20px;
     background-color: #f9f9f9;
-    transition: ease 0.25s;
+    transition: var(--ease025s);
+    cursor: pointer;
 }
 
 .switch label::before {
@@ -227,17 +214,24 @@
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     position: relative;
-    transition: ease 0.25s;
+    transition: var(--ease025s);
 }
 
 .switch input[type="checkbox"]:checked + label::before {
     transform: translateX(30px);
     box-shadow: 0 -2px -5px rgba(0, 0, 0, 0.5);
-    transition: ease 0.25s;
+    transition: var(--ease025s);
 }
 
 .switch input[type="checkbox"]:checked + label {
-    background-color: #74e563;
+    background-color: #fa8bff;
+    background-image: linear-gradient(
+        45deg,
+        #fa8bff 0%,
+        #2bd2ff 52%,
+        #2bff88 90%
+    );
+
     outline-color: #74e563;
 }
 
@@ -256,7 +250,7 @@
         font-size: 10rem;
         font-weight: 700;
         cursor: pointer;
-        transition: ease 0.25s;
+        transition: var(--ease025s);
     }
 }
 
@@ -371,7 +365,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
-    transition: ease 0.25s;
+    transition: var(--ease025s);
     cursor: pointer;
 }
 
@@ -393,6 +387,7 @@
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.5;
+    color: var(--black);
 }
 
 .quality__item {
@@ -401,16 +396,16 @@
     align-items: center;
     gap: 25px;
     margin-top: 100px;
-    transition: ease 0.25s;
+    transition: var(--ease025s);
 }
 
 .quality__item i,
 .quality__item p {
-    transition: ease 0.25s;
+    transition: var(--ease025s);
 }
 
 .quality__item:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) !important;
 }
 
 .quality__item:hover i {
@@ -444,6 +439,7 @@
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 15px;
+    color: var(--grayBlack);
 }
 
 .footer-item a {
@@ -562,6 +558,7 @@
 .posts__heading {
     font-size: 4rem;
     font-weight: 700;
+    color: var(--black);
 }
 
 .tutorial {
@@ -588,7 +585,7 @@
 }
 
 .tutorial-info {
-    background-color: #fff;
+    background-color: var(--white);
     height: 690px;
     padding: 50px 100px;
     border-radius: 10px;
@@ -601,6 +598,7 @@
     border-radius: 10px;
     margin-bottom: 20px;
     cursor: pointer;
+    color: var(--black);
 }
 
 .tutorial-item h3 {
@@ -652,7 +650,7 @@
 }
 
 .footer__heading a {
-    color: #000;
+    color: var(--black);
 }
 
 .footer__text {
@@ -689,7 +687,7 @@
 
 .footer-inner__socials i {
     color: #000;
-    transition: ease 0.25s;
+    transition: var(--ease025s);
     width: 35px;
     height: 35px;
     display: grid;
@@ -743,7 +741,7 @@
     height: 38px;
     top: 3px;
     background-color: #21d4fd;
-    transition: ease 0.25s;
+    transition: var(--ease025s);
 }
 
 .footer__send--btn:hover {
@@ -758,6 +756,7 @@
 .copyright {
     margin-top: 100px;
     font-size: 1.8rem;
+    color: var(--grayBlack);
 }
 
 .copyright {
@@ -805,9 +804,6 @@
 }
 
 @media (max-width: 991.98px) {
-    .header {
-        width: 100%;
-    }
     .myVideo {
         width: 680px;
     }
@@ -842,7 +838,6 @@
 }
 
 @media (max-width: 767.98px) {
-    
     .header-menu-mobile {
         display: block;
     }
@@ -898,7 +893,7 @@
     }
     .banner__info {
         top: 80px;
-        left: 60px;
+        left: 25%;
     }
     .banner__heading {
         font-size: 3rem;

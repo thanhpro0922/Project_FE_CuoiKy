@@ -91,3 +91,25 @@ tutorials.forEach((item) => {
         icon.classList.toggle("fa-plus");
     });
 });
+
+// dark mode
+
+const btnDarkMode = document.querySelector(".btnDarkMode");
+const checkDarkMode = document.querySelector("#switch");
+const darkTheme = document.querySelector("body");
+
+btnDarkMode.addEventListener("click", () => {
+    darkTheme.classList.toggle("dark-mode");
+    localStorage.setItem("darkMode", darkTheme.classList.contains("dark-mode"));
+});
+const darkMode = localStorage.getItem("darkMode");
+
+const isDarkMode = darkMode === "true";
+
+if (isDarkMode) {
+    darkTheme.classList.add("dark-mode");
+    checkDarkMode.checked = true;
+} else {
+    darkTheme.classList.remove("dark-mode");
+    checkDarkMode.checked = false;
+}

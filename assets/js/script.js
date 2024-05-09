@@ -6,7 +6,6 @@ bannerVideo.addEventListener("timeupdate", () => {
 });
 document.addEventListener("DOMContentLoaded", () => {
     const configureSplide = (e) => {
-        console.log(e);
         const splide = new Splide(e, {
             type: "loop",
             perPage: 3,
@@ -42,17 +41,53 @@ document.addEventListener("DOMContentLoaded", () => {
 
     configureSplide(".splide");
     configureSplide(".splide2");
+});
 
-    var scroll = document.getElementById("scrollToTopBtn");
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 1) {
-            scroll.classList.remove("hidden");
-        } else {
-            scroll.classList.add("hidden");
-        }
+let calcScrollValue = () => {
+    let scrollProgress = document.getElementById("scrollToTopBtn");
+    let progressValue = document.querySelector("#scrollToTopBtn i");
+    let pos = document.documentElement.scrollTop;
+    let calcHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 100) / calcHeight);
+    if (pos > 1) {
+        scrollProgress.style.display = "grid";
+    } else {
+        scrollProgress.style.display = "none";
+    }
+    scrollProgress.addEventListener("click", () => {
+        document.documentElement.scrollTop = 0;
     });
+    scrollProgress.style.background = `conic-gradient(#00DBDE ${scrollValue}%, #fff ${scrollValue}%)`;
+};
 
-    scroll.addEventListener("click", () => {
-        window.scrollTo({ top: 0 });
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+
+const tutorials = document.querySelectorAll(".tutorial-item");
+
+tutorials.forEach((item) => {
+    const desc = item.querySelector(".tutorial__desc");
+    const heading = item.querySelector("h3");
+    const icon = item.querySelector("i");
+
+    item.addEventListener("click", () => {
+        tutorials.forEach((item2) => {
+            const desc2 = item2.querySelector(".tutorial__desc");
+            const heading2 = item2.querySelector("h3");
+            const icon2 = item2.querySelector("i");
+            if (item2 !== item) {
+                desc2.classList.add("hidden");
+                heading2.classList.remove("heading-bold");
+                icon2.classList.add("fa-plus");
+                icon2.classList.remove("fa-minus", "border-item");
+            }
+        });
+        desc.classList.toggle("hidden");
+        heading.classList.toggle("heading-bold");
+        icon.classList.toggle("fa-minus");
+        icon.classList.toggle("border-item");
+        icon.classList.toggle("fa-plus");
     });
 });

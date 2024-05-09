@@ -105,11 +105,14 @@
             rel="stylesheet"
             href="https://unpkg.com/@splidejs/splide@3.0.9/dist/css/splide.min.css"
         />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="./assets/css/base.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+
         <title>Diner</title>
     </head>
     <body>
+        <!-- Header -->
         <header class="header header-fixed">
             <div class="container-sm">
                 <div class="row">
@@ -118,6 +121,7 @@
                     >
                         <a href="#">
                             <img
+                                loading="lazy"
                                 src="./assets/images/Dragon_Ball_Z_Logo.png"
                                 alt="DragonBall"
                                 class="header__logo"
@@ -130,7 +134,7 @@
                                 <a href="#">Trang chủ</a>
                             </li>
                             <li class="header-menu-item">
-                                <a href="#!"
+                                <a href="#posts2"
                                     >Thể loại truyện
                                     <i class="fa-solid fa-angle-down"></i>
                                 </a>
@@ -166,7 +170,7 @@
                                 </ul>
                             </li>
                             <li class="header-menu-item">
-                                <a href="#!"
+                                <a href="#posts"
                                     >Thể loại anime
                                     <i class="fa-solid fa-angle-down"></i>
                                 </a>
@@ -205,7 +209,7 @@
                                 <a href="#!">Lịch sử</a>
                             </li>
                             <li class="header-menu-item">
-                                <a href="#!">Hướng dẫn</a>
+                                <a href="#tutorial">Hướng dẫn</a>
                             </li>
                         </ul>
                     </nav>
@@ -224,6 +228,7 @@
                 </div>
             </div>
         </header>
+        <!-- Banner -->
         <div class="banner">
             <div class="container banner-container">
                 `
@@ -235,13 +240,26 @@
                     `
                 </video>
                 <div class="banner__info">
-                    <h1 class="banner__heading">One Punch Man</h1>
-                    <a href="#!" class="banner-watch">Xem ngay</a>
+                    <h1
+                        class="banner__heading"
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
+                    >
+                        One Punch Man
+                    </h1>
+                    <a
+                        href="#!"
+                        class="banner-watch"
+                        data-aos="fade-up"
+                        data-aos-duration="3000"
+                        >Xem ngay</a
+                    >
                 </div>
             </div>
         </div>
-        <main style="height: 5000px">
-            <article class="posts">
+        <main>
+            <!-- New Anime -->
+            <article class="posts" id="posts">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -257,6 +275,7 @@
                                             <a href="#!">
                                                 <div class="post-inner__img">
                                                     <img
+                                                        loading="lazy"
                                                         src="./assets/images/post1.webp"
                                                         alt="OnePiece"
                                                     />
@@ -290,6 +309,7 @@
                                             <a href="#!">
                                                 <div class="post-inner__img">
                                                     <img
+                                                        loading="lazy"
                                                         src="./assets/images/post2.webp"
                                                         alt="DragonBall"
                                                     />
@@ -322,6 +342,7 @@
                                             <a href="#!">
                                                 <div class="post-inner__img">
                                                     <img
+                                                        loading="lazy"
                                                         src="./assets/images/post3.jpg"
                                                         alt="Doraemon"
                                                     />
@@ -354,6 +375,7 @@
                                             <a href="#!">
                                                 <div class="post-inner__img">
                                                     <img
+                                                        loading="lazy"
                                                         src="./assets/images/post4.jpg"
                                                         alt="Shin"
                                                     />
@@ -386,6 +408,7 @@
                                             <a href="#!">
                                                 <div class="post-inner__img">
                                                     <img
+                                                        loading="lazy"
                                                         src="./assets/images/post5.jpeg"
                                                         alt="Conan"
                                                     />
@@ -418,6 +441,7 @@
                                             <a href="#!">
                                                 <div class="post-inner__img">
                                                     <img
+                                                        loading="lazy"
                                                         src="./assets/images/post6.jpg"
                                                         alt="JujutsuKaisen"
                                                     />
@@ -450,6 +474,7 @@
                                             <a href="#!">
                                                 <div class="post-inner__img">
                                                     <img
+                                                        loading="lazy"
                                                         src="./assets/images/post7.webp"
                                                         alt="ThatNghiepChuyenSinh"
                                                     />
@@ -482,6 +507,7 @@
                                             <a href="#!">
                                                 <div class="post-inner__img">
                                                     <img
+                                                        loading="lazy"
                                                         src="./assets/images/post8.jpeg"
                                                         alt="Naruto"
                                                     />
@@ -514,6 +540,7 @@
                                             <a href="#!">
                                                 <div class="post-inner__img">
                                                     <img
+                                                        loading="lazy"
                                                         src="./assets/images/post9.png"
                                                         alt="Pokemon"
                                                     />
@@ -549,8 +576,8 @@
                     </div>
                 </div>
             </article>
-
-            <article class="posts2">
+            <!-- New Manga -->
+            <article class="posts2" id="posts2">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -566,6 +593,7 @@
                                             <a href="#!">
                                                 <div class="post-inner__img">
                                                     <img
+                                                        loading="lazy"
                                                         src="./assets/images/manga8.jpg"
                                                         alt="HocVienAnhHung"
                                                     />
@@ -599,6 +627,7 @@
                                             <a href="#!">
                                                 <div class="post-inner__img">
                                                     <img
+                                                        loading="lazy"
                                                         src="./assets/images/manga2.jpg"
                                                         alt="DragonBall"
                                                     />
@@ -631,6 +660,7 @@
                                             <a href="#!">
                                                 <div class="post-inner__img">
                                                     <img
+                                                        loading="lazy"
                                                         src="./assets/images/manga1.jpg"
                                                         alt="Doraemon"
                                                     />
@@ -663,6 +693,7 @@
                                             <a href="#!">
                                                 <div class="post-inner__img">
                                                     <img
+                                                        loading="lazy"
                                                         src="./assets/images/manga3.jpg"
                                                         alt="Shin"
                                                     />
@@ -695,6 +726,7 @@
                                             <a href="#!">
                                                 <div class="post-inner__img">
                                                     <img
+                                                        loading="lazy"
                                                         src="./assets/images/manga4.jpg"
                                                         alt="Conan"
                                                     />
@@ -727,6 +759,7 @@
                                             <a href="#!">
                                                 <div class="post-inner__img">
                                                     <img
+                                                        loading="lazy"
                                                         src="./assets/images/manga5.jpg"
                                                         alt="TrangQuynh"
                                                     />
@@ -759,6 +792,7 @@
                                             <a href="#!">
                                                 <div class="post-inner__img">
                                                     <img
+                                                        loading="lazy"
                                                         src="./assets/images/manga6.jpg"
                                                         alt="CauBeRong"
                                                     />
@@ -791,6 +825,7 @@
                                             <a href="#!">
                                                 <div class="post-inner__img">
                                                     <img
+                                                        loading="lazy"
                                                         src="./assets/images/manga7.jpg"
                                                         alt="Naruto"
                                                     />
@@ -823,6 +858,7 @@
                                             <a href="#!">
                                                 <div class="post-inner__img">
                                                     <img
+                                                        loading="lazy"
                                                         src="./assets/images/manga9.webp"
                                                         alt="KimetsunoYaiba"
                                                     />
@@ -858,10 +894,455 @@
                     </div>
                 </div>
             </article>
-            <button id="scrollToTopBtn" class="hidden">
-                <i class="fa-regular fa-hand-point-up"></i>
+            <!-- Button Scroll To Top -->
+            <button id="scrollToTopBtn">
+                <i class="fa-solid fa-angles-up"></i>
             </button>
+
+            <!-- Decor -->
+            <section class="decor" id="decor">
+                <div class="container">
+                    <div class="row decor-inner">
+                        <div class="box">
+                            <img
+                                loading="lazy"
+                                src="./assets/images/decor2.jpg"
+                                alt="Shin"
+                                class="decor__img"
+                            />
+                        </div>
+                        <div class="box">
+                            <img
+                                loading="lazy"
+                                style="object-position: 0 25%"
+                                src="./assets/images/decor4.jpg"
+                                alt="Naruto"
+                                class="decor__img"
+                            />
+                        </div>
+                        <div class="box tall">
+                            <img
+                                loading="lazy"
+                                src="./assets/images/decor1.jpg"
+                                alt="Doraemon"
+                                class="decor__img"
+                            />
+                        </div>
+                        <div class="box">
+                            <img
+                                loading="lazy"
+                                style="object-position: 0 22%"
+                                src="./assets/images/decor18.jpg"
+                                alt="Saitama"
+                                class="decor__img"
+                            />
+                        </div>
+                        <div class="box wide">
+                            <img
+                                loading="lazy"
+                                style="object-position: 0 35%"
+                                src="./assets/images/decor19.jpg"
+                                alt="KaitoKid"
+                                class="decor__img"
+                            />
+                        </div>
+                        <div class="box tall">
+                            <img
+                                loading="lazy"
+                                src="./assets/images/decor3.jpg"
+                                alt="Pokemon"
+                                class="decor__img"
+                            />
+                        </div>
+                        <div class="box">
+                            <img
+                                loading="lazy"
+                                style="object-position: 0 37%"
+                                src="./assets/images/decor11.jpg"
+                                alt="Tanjiro"
+                                class="decor__img"
+                            />
+                        </div>
+                        <div class="box wide">
+                            <img
+                                loading="lazy"
+                                style="object-position: 0 15%"
+                                src="./assets/images/decor10.jpg"
+                                alt="Nami"
+                                class="decor__img"
+                            />
+                        </div>
+                        <div class="box">
+                            <img
+                                loading="lazy"
+                                style="object-position: 0 25%"
+                                src="./assets/images/decor5.jpg"
+                                alt="Songoku"
+                                class="decor__img"
+                            />
+                        </div>
+                        <div class="box tall">
+                            <img
+                                loading="lazy"
+                                src="./assets/images/decor6.jpg"
+                                alt="Luffy"
+                                class="decor__img"
+                            />
+                        </div>
+                        <div class="box">
+                            <img
+                                loading="lazy"
+                                style="object-position: 0 35%"
+                                src="./assets/images/decor7.jpg"
+                                alt="Gojo"
+                                class="decor__img"
+                            />
+                        </div>
+                        <div class="box">
+                            <img
+                                loading="lazy"
+                                style="object-position: 0 20%"
+                                src="./assets/images/decor8.jpg"
+                                alt="Deku"
+                                class="decor__img"
+                            />
+                        </div>
+                        <div class="box tall">
+                            <img
+                                loading="lazy"
+                                src="./assets/images/decor9.jpg"
+                                alt="Friren"
+                                class="decor__img"
+                            />
+                        </div>
+                        <div class="box">
+                            <img
+                                loading="lazy"
+                                style="object-position: 0 15%"
+                                src="./assets/images/decor12.jpg"
+                                alt="Toshiro"
+                                class="decor__img"
+                            />
+                        </div>
+                        <div class="box">
+                            <img
+                                loading="lazy"
+                                style="object-position: 0 30%"
+                                src="./assets/images/decor13.jpg"
+                                alt="Shinobu"
+                                class="decor__img"
+                            />
+                        </div>
+                        <div class="box">
+                            <img
+                                loading="lazy"
+                                style="object-position: 0 25%"
+                                src="./assets/images/decor14.jpg"
+                                alt="Shinobu"
+                                class="decor__img"
+                            />
+                        </div>
+                        <div class="box wide">
+                            <img
+                                loading="lazy"
+                                style="object-position: 0 55%"
+                                src="./assets/images/decor15.jpg"
+                                alt="Shinobu"
+                                class="decor__img"
+                            />
+                        </div>
+                        <div class="box">
+                            <img
+                                loading="lazy"
+                                style="object-position: 0 75%"
+                                src="./assets/images/decor16.jpg"
+                                alt="Zenitsu"
+                                class="decor__img"
+                            />
+                        </div>
+                        <div class="box wide">
+                            <img
+                                loading="lazy"
+                                style="object-position: 0 35%"
+                                src="./assets/images/decor17.jpg"
+                                alt="Killua"
+                                class="decor__img"
+                            />
+                        </div>
+                        <div class="box">
+                            <img
+                                loading="lazy"
+                                style="object-position: 0 15%"
+                                src="./assets/images/decor20.jpg"
+                                alt="Haibara"
+                                class="decor__img"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Quality -->
+            <section class="quality">
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="col-12"
+                            data-aos="flip-up"
+                            data-aos-once="true"
+                        >
+                            <h2 class="quality__heading text-center">
+                                Cam Kết Chất Lượng Dịch Vụ
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row quality-bottom">
+                        <div
+                            class="col-xl-4 col-sm-12 col-md-4"
+                            data-aos="zoom-out-up"
+                        >
+                            <div class="quality__item">
+                                <i class="fa-solid fa-bolt"></i>
+                                <p class="quality__text">Tốc độ nhanh</p>
+                            </div>
+                        </div>
+                        <div
+                            class="col-xl-4 col-sm-12 col-md-4"
+                            data-aos="zoom-out-up"
+                        >
+                            <div class="quality__item">
+                                <i class="fa-solid fa-images"></i>
+                                <p class="quality__text">
+                                    Chất lượng hình ảnh tốt nhất
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="col-xl-4 col-sm-12 col-md-4"
+                            data-aos="zoom-out-up"
+                        >
+                            <div class="quality__item">
+                                <i class="fa-solid fa-lock"></i>
+                                <p class="quality__text">Bảo mật</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Tutorial -->
+            <section class="tutorial" id="tutorial">
+                <div class="container">
+                    <div class="row">
+                        <h2
+                            class="tutorial__heading col-12"
+                            data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine"
+                        >
+                            Hướng Dẫn Sử Dụng
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="tutorial-info col-12">
+                            <div class="tutorial-item">
+                                <h3 class="heading-bold">
+                                    1. Cách để xem anime
+                                    <i
+                                        class="fa-solid fa-minus border-item"
+                                    ></i>
+                                </h3>
+                                <p class="tutorial__desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Enim eaque necessitatibus
+                                    similique est amet laboriosam quia nostrum
+                                    mollitia tempora alias ad corrupti iure
+                                    ratione, beatae hic consequatur laudantium
+                                    ducimus consequuntur. Molestias,
+                                    praesentium. Rem illo enim incidunt labore
+                                    libero est consequuntur ea, cupiditate
+                                    blanditiis dignissimos possimus. Placeat
+                                    impedit fugit harum quod!
+                                </p>
+                            </div>
+                            <div class="tutorial-item">
+                                <h3>
+                                    2. Cách để đọc truyện tranh
+                                    <i class="fa-solid fa-plus"></i>
+                                </h3>
+                                <p class="tutorial__desc hidden">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Enim eaque necessitatibus
+                                    similique est amet laboriosam quia nostrum
+                                    mollitia tempora alias ad corrupti iure
+                                    ratione, beatae hic consequatur laudantium
+                                    ducimus consequuntur. Molestias,
+                                    praesentium. Rem illo enim incidunt labore
+                                    libero est consequuntur ea, cupiditate
+                                    blanditiis dignissimos possimus. Placeat
+                                    impedit fugit harum quod!
+                                </p>
+                            </div>
+                            <div class="tutorial-item">
+                                <h3>
+                                    3. Cách xem lại lịch sử
+                                    <i class="fa-solid fa-plus"></i>
+                                </h3>
+                                <p class="tutorial__desc hidden">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Enim eaque necessitatibus
+                                    similique est amet laboriosam quia nostrum
+                                    mollitia tempora alias ad corrupti iure
+                                    ratione, beatae hic consequatur laudantium
+                                    ducimus consequuntur. Molestias,
+                                    praesentium. Rem illo enim incidunt labore
+                                    libero est consequuntur ea, cupiditate
+                                    blanditiis dignissimos possimus. Placeat
+                                    impedit fugit harum quod!
+                                </p>
+                            </div>
+                            <div class="tutorial-item">
+                                <h3>
+                                    4. Hướng dẫn đăng ký tài khoản
+                                    <i class="fa-solid fa-plus"></i>
+                                </h3>
+                                <p class="tutorial__desc hidden">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Enim eaque necessitatibus
+                                    similique est amet laboriosam quia nostrum
+                                    mollitia tempora alias ad corrupti iure
+                                    ratione, beatae hic consequatur laudantium
+                                    ducimus consequuntur. Molestias,
+                                    praesentium. Rem illo enim incidunt labore
+                                    libero est consequuntur ea, cupiditate
+                                    blanditiis dignissimos possimus. Placeat
+                                    impedit fugit harum quod!
+                                </p>
+                            </div>
+                            <div class="tutorial-item">
+                                <h3>
+                                    5. Hướng dẫn cách tìm kiếm nội dung yêu
+                                    thích
+                                    <i class="fa-solid fa-plus"></i>
+                                </h3>
+                                <p class="tutorial__desc hidden">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Enim eaque necessitatibus
+                                    similique est amet laboriosam quia nostrum
+                                    mollitia tempora alias ad corrupti iure
+                                    ratione, beatae hic consequatur laudantium
+                                    ducimus consequuntur. Molestias,
+                                    praesentium. Rem illo enim incidunt labore
+                                    libero est consequuntur ea, cupiditate
+                                    blanditiis dignissimos possimus. Placeat
+                                    impedit fugit harum quod!
+                                </p>
+                            </div>
+                            <div class="tutorial-item">
+                                <h3>
+                                    6. Hướng dẫn quay trở lại trang chủ
+                                    <i class="fa-solid fa-plus"></i>
+                                </h3>
+                                <p class="tutorial__desc hidden">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Enim eaque necessitatibus
+                                    similique est amet laboriosam quia nostrum
+                                    mollitia tempora alias ad corrupti iure
+                                    ratione, beatae hic consequatur laudantium
+                                    ducimus consequuntur. Molestias,
+                                    praesentium. Rem illo enim incidunt labore
+                                    libero est consequuntur ea, cupiditate
+                                    blanditiis dignissimos possimus. Placeat
+                                    impedit fugit harum quod!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <h3 class="footer__heading"><a href="#">Diner</a></h3>
+                        <p class="footer__text">
+                            Tại trang web này, bạn có thể tìm thấy một loạt các
+                            nội dung hấp dẫn, từ những bộ anime kinh điển đã
+                            được yêu thích suốt nhiều năm đến những bộ manga mới
+                            nhất đang làm mưa làm gió trong cộng đồng. Từ những
+                            câu chuyện kịch tính đến những tình huống hài hước,
+                            từ thế giới siêu nhiên đến các cuộc phiêu lưu huyền
+                            bí, mọi thứ đều có mặt tại trang web này để thỏa mãn
+                            sở thích và mong muốn của các fan anime và manga.
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <h4 class="footer__heading2">Download</h4>
+                        <p class="footer-item"><a href="#">Windows app</a></p>
+                        <p class="footer-item"><a href="#">Mac app</a></p>
+                        <p class="footer-item"><a href="#">Linux app</a></p>
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <h4 class="footer__heading2">Products</h4>
+                        <p class="footer-item"><a href="#posts">Anime</a></p>
+                        <p class="footer-item"><a href="#posts2">Manga</a></p>
+                        <p class="footer-item"><a href="#decor">Decor</a></p>
+                        <p class="footer-item">
+                            <a href="#tutorial">Tutorial</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h4 class="footer__heading2">Contacts</h4>
+                        <div class="item">
+                            <a href="mailto:23t1020497@husc.edu.vn"
+                                ><i class="fa-regular fa-envelope"></i
+                                >23T1020497@husc.edu.vn</a
+                            >
+                        </div>
+                        <div class="item">
+                            <a href="tel:0345678910">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                0345678910</a
+                            >
+                        </div>
+                        <h4 class="social footer__heading2">Socials</h4>
+                        <div class="footer-inner__socials d-flex">
+                            <div class="social-item">
+                                <a href="https://www.facebook.com"
+                                    ><i class="fa-brands fa-facebook-f"></i
+                                ></a>
+                            </div>
+                            <div class="social-item">
+                                <a href="https://www.youtube.com"
+                                    ><i class="fa-brands fa-youtube"></i
+                                ></a>
+                            </div>
+                            <div class="social-item">
+                                <a href="https://www.tiktok.com"
+                                    ><i class="fa-brands fa-tiktok"></i
+                                ></a>
+                            </div>
+                        </div>
+                        <form action="" class="footer__form">
+                            <h4 class="footer__heading2">Subscribe</h4>
+                            <div class="footer-inner__input">
+                                <input
+                                    placeholder="Enter email address"
+                                    type="text"
+                                />
+                                <button class="footer__send--btn">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center copyright">
+                        &copy Copyright by Diner - 2024
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script
             src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -873,6 +1354,10 @@
             crossorigin="anonymous"
         ></script>
         <script src="https://unpkg.com/@splidejs/splide@3.0.9/dist/js/splide.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <script src="./assets/js/script.js"></script>
     </body>
 </html>

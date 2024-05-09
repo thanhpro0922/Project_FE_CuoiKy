@@ -29,7 +29,7 @@
 
 .header-menu-list a {
     display: inline-block;
-    padding: 10px;
+    padding: 20px 10px;
     font-size: 1.5rem;
     font-weight: 500;
     color: #fff;
@@ -75,7 +75,7 @@
     width: 0;
     height: 2px;
     position: absolute;
-    bottom: 0;
+    bottom: 18px;
     left: 11px;
     background-color: var(--color-green);
     transition: width 0.25s ease, right 0.25s ease;
